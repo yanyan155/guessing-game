@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html {
+  font: 10px 'OpenSans', sans-serif;
+}
+ ul { list-style: none; };
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a, a:hover { text-decoration: none; }
+
+.clearfix:after, .clearfix:before {
+  content: '';
+  display: table;
+}
+.clearfix:after { clear: both; }
+h1 {
+  position: absolute;
+  top: -9999px;
+}
+h2 {
+  font-size: 2rem;
+  padding: 10px 0;
+}
+p, ol li, label {
+  font-size: 1.6rem;
+}
+p  {
+  padding: 10px 0;
+}
+
+.wrapper {
+  background: #F0F0F0;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+}
+.cards-skirt-wrap,
+.choose-difficult-wrap,
+.new-game-wrap,
+.top-players-wrap {
+  position: relative;
+}
+.cards-skirt-list,
+.choose-difficult-list,
+.top-players-list {
+  position: absolute;
+  width: 150px;
+  max-height: 200px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  background: #52EC8C;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards-skirt-button,
+.choose-difficult-button,
+.new-game-button,
+.top-players-button {
+    width: 150px;
+    height: 50px;
+    background: #31CB6B;
+    border: 0px;
+    cursor: pointer;
+}
+.cards-skirt-button:hover,
+.choose-difficult-button:hover,
+.new-game-button:hover {
+  background: #19B353;
+}
+.cards-skirt-element,
+.choose-difficult-element,
+.top-players-list tr{
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+.cards-skirt-element img {
+  width: 50px;
+  height: 50px;
+}
+.user-info {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #2AC9FF; 
+  align-items: center;
+  padding: 20px;
+}
+
+main {
+  background: #B0EBF3;
+  padding: 40px;
+  text-align: center;
+  height: 100%;
+  margin-bottom: 40px;
+}
+.game-wrap { 
+   display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: column; 
+  align-items: stretch;
+  justify-content: center;
+} 
+ol {
+  text-align: left;
+}
+.top-players-list {
+  width: 1000px;
+  justify-content: space-around;
+  right: 0;
+  max-height: none;
+}
+.top-players-list>li {
+  width: 300px;
+  overflow: hidden;
+}
+.top-players-list ol{
+  margin-left: 30px;
+}
+.top-players-list ol>li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-column {
+  display: flex; 
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 45%; 
+}
+.card-column:last-child {
+  margin-bottom: 0px;
+}
+.card-wrap {
+  width: 20%;
+  margin-left: 20px;
+}
+.card-wrap:first-child {
+  margin-left: 0;
+}
+.active-card .show-card{
+   display: block;
+}
+.active-card .hide-card{
+  display: none;
+}
+.show-card {
+  display: none; 
+  height: 100%; 
+  width: 100%;
+}
+.hide-card {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+
